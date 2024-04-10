@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개페이지 | HTML 세션 과제</title>
+
+    <style>
+        *{font-family: "Hi Melody", sans-serif;}
+        .mytitle {
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>이재현의 자기소개페이지</h1>
+    </div>
+    <hr> </hr>
+    <div>
+        <div style="height: 100px; width: 100px; float: left;">
+            <img src="https://i.pinimg.com/originals/de/7c/36/de7c36b36d30068b5db111db84c35d13.jpg" width="500" height="700" alt="페이지 관리자에게 문의하세요." />
+        </div>
+        <div style="height: 100px; width: 950px; float: right; font-size:xx-large;">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>이름 : 이재현</p>
+            <p>생일 : 2000.06.20 (25세)</p>
+            <p>학력 : 한국외국어대학교 산업경영공학과 3학년 재학</p>
+            <p>MBTI : ISTJ</p>
+            <p>
+                <a href="https://www.notion.so/hufsglobal/f62238534ac4409baa5aa31b428360bb/">이외 더 궁금한 사항은 꾸욱 눌러주세요♡</a>
+            </p>
+            <p>
+                <form class="left" name="like">
+                    당신이 공주라면 [네/아니요]를 작성해주시고 "확인" 버튼을 누르세요
+                    <input type="text" value="네" name="expr" size="15">
+                    <input type="button" value="확인" onclick="compute(this.form)">
+                </form>
+            </p>
+        </div>
+        <div class="container">
+            <div class="clock">
+                <h1 id="time"></h1>
+            </div>
+            <button id="stop">STOP</button>
+            <button id="go">GO</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
